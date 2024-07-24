@@ -1,11 +1,7 @@
 package CODSOFT;
-
-
-// ATM Class:
-
 import java.util.Scanner;
 
-public class ATM {
+class ATM {
     private BankAccount account;
     private Scanner input;
 
@@ -68,8 +64,7 @@ public class ATM {
 }
 
 // BankAccount Class:
-
-public class BankAccount {
+class BankAccount {
     private double balance;
 
     public BankAccount(double balance) {
@@ -93,14 +88,18 @@ public class BankAccount {
     }
 }
 
-// Main Method:
 
-public class Main{
+// Main Method:
+class Main{
     public static void main(String[] args) {
         BankAccount account = new BankAccount(1000.0); // Initial balance
         ATM atm = new ATM(account);
         atm.run();
     }
 }
+
+
+
+
 
 
